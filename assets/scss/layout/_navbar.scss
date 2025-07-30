@@ -1,0 +1,17 @@
+/*最上方導覽列*/
+.navbar{
+	padding-top: 16px;
+	padding-bottom: 16px;
+	a{
+		border-bottom: 1px solid transparent; /*hover時不會抖動*/
+		&:hover{
+			border-bottom:1px solid $neutral-900;
+		}
+	}
+}
+@media(max-width:768px){
+	.navbar{
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+}

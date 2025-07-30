@@ -1,0 +1,85 @@
+/* box-sizing、文字樣式*/
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+body{
+    font-family: "Noto Sans TC", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+	color:$neutral-900;
+}
+/*H1 ~ H6*/
+.h1{
+	font-family: "Noto Sans TC", sans-serif;
+	font-size: 48px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+.h2{
+	font-family: "Noto Sans TC", sans-serif;
+	font-size: 32px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+.h3{
+	font-family: "Noto Sans TC", sans-serif;
+	font-size: 28px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+.h4{
+	font-family: "Noto Sans TC", sans-serif;
+	font-size: 24px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+.h5{
+	font-family: "Noto Sans TC", sans-serif;
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+.h6{
+	font-family: "Noto Sans TC", sans-serif;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+@media(max-width:768px){
+	.h3-md{
+		font-size: 28px;
+	}
+	.h4-md{
+		font-size: 24px;
+	}
+	.h5-md{
+		font-size: 20px;
+	}
+	.h6-md{
+		font-size: 16px;
+	}
+}
+
+/*字重*/
+.fw-400{
+	font-weight: 400;
+}
+.fw-500{
+	font-weight: 500;
+}
+.fw-700{
+	font-weight: 700;
+}
+/*img & a 設定*/
+img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+a{
+	display: block;
+	text-decoration-line: none;
+	color: $neutral-900;
+}

@@ -1,0 +1,226 @@
+/*hero-section*/
+.hero{
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner.png?raw=true");
+    max-width: 100%;
+    background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+    &-content{
+        width: 586px;
+        padding-top: 289px;
+        padding-bottom: 288px;
+        margin-left: 200px;
+        color:$neutral-white;
+        .h1{
+            font-size: 64px;
+        }
+        .btn{
+            background-color: $primary-300;
+            &:hover{
+                background-color: $neutral-white;
+            }
+        }
+    }
+}
+
+main{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+/*新品上市區塊*/
+.new-arrival{
+    .title{
+        text-align: center;
+    }
+}
+.product{
+    .list-card{
+        &-mb-40{
+            margin-bottom: 40px;
+        }
+        .h5{
+            text-align: left;
+        }
+        p{
+            text-align: left;
+        }
+        a:hover{
+            box-shadow: 10px 10px 10px -6px;
+        }
+    }
+}
+/*熱銷補貨區塊*/
+.best-seller{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    .h2{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .col-3{
+        position: relative;
+        z-index: 5;
+    }
+    .sell-well{
+        width: 91px;
+        padding: 8px 12px;
+        position:absolute;
+        top: 0;
+        left: 12px;
+        background-color: $primary-100;
+        z-index: 10;
+        p{
+            font-size: 14px;
+            text-align: center;
+            white-space: pre; /*保留原始空白與換行*/
+            color: $primary-400;
+        }
+    }
+    a:hover{
+        box-shadow: 10px 10px 10px -6px;
+    }
+}
+
+/*跨界聯名*/
+.sale{
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded.png?raw=true");
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+    margin-top: 48px;
+    margin-bottom: 48px;
+
+    &-content{
+        max-width: 634px;
+        margin: 0 auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+        margin-bottom: 84px;
+        .title{
+            .h1{
+                color: $neutral-white;
+            }
+            .x-color{
+                font-size: 40px;
+                color: $primary-300;
+            }
+        }
+        .h2{
+            color: $neutral-white;
+        }
+        p{
+            font-size: 20px;
+            color: $neutral-500;
+        }
+        .btn{
+            margin: 0px 259.5px;
+            background-color: $primary-300;
+            &:hover{
+                background-color: $neutral-white;
+            }
+        }
+    }
+}
+
+/*依系列選購區塊*/
+.series{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    .h2{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    /*系列選購 圖片亮度為 60%*/
+    img{
+        filter: brightness(60%);
+    }
+    &-name{
+        text-align: center;
+        color: $neutral-white;
+    }
+    .serie-img1{
+        position: relative;
+        z-index: 5;
+    }
+    .name1{
+        width: 219px;
+        position: absolute;
+        top:118px;
+        left:43.5px;
+        right:43.5px;
+        z-index: 10;
+    }
+    .serie-img2{
+        position: relative;
+        z-index: 5;
+    }
+    .name2{
+        width: 201px;
+        position: absolute;
+        top:118px;
+        left:52.5px;
+        right:52.5px;
+        z-index: 10;
+    }
+    .serie-img3{
+        position: relative;
+        z-index: 5;
+    }
+    .name3{
+        width: 253px;
+        position: absolute;
+        top:118px;
+        left:26.5px;
+        right:26.5px;
+        z-index: 10;
+    }
+    .serie-img4{
+        position: relative;
+        z-index: 5;
+    }
+    .name4{
+        width: 205px;
+        position: absolute;
+        top:118px;
+        left:50.5px;
+        right:50.5px;
+        z-index: 10;
+    }
+    a:hover{
+        img{
+            box-shadow: 10px 10px 10px -6px;
+        }
+        .series-name{
+            color: $neutral-900;
+        }
+    }
+}
+/*穿搭靈感區塊*/
+.style{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-bottom: 48px;
+
+    &-row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: -4px;
+    }
+    &-col-4{
+        width: calc(100%/12*4);
+        padding: 4px;
+    }
+    &-col-6{
+        width: calc(100%/12*6);
+        padding: 4px;
+    }
+    &-col-12{
+        width: 100%;
+        padding: 4px;
+    }
+}
+

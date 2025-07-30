@@ -1,0 +1,77 @@
+/*main*/
+.product-list{
+	padding-top: 32px;
+	padding-bottom: 32px;
+	margin-bottom: 48px;
+
+	/*col-2 內容*/
+	/*大標題「所有商品」縮排 */
+	.h3{
+		padding-top: 7px;
+		padding-bottom: 7px;
+	}
+	/* 項目「所有商品」的顏色 */
+	.menu{
+		.menu-item{
+			color: $primary-400;
+		}
+		a:hover{
+			color: $primary-400;
+		}
+	}
+
+	/*col-10 的格線系統*/
+	.list{
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -12px;
+		margin-right: -12px;
+	}
+	/*商品卡片寬度、左右縮排、下方間距*/
+	.list-card{
+		padding-left: 12px;
+		padding-right: 12px;
+		margin-bottom: 48px;
+		
+		a:hover{
+		box-shadow: 10px 10px 10px -6px;
+		}
+	}
+	/*下方頁面按鈕樣式*/
+	.btn-item {
+		.btn{
+			padding: 8px 15px;
+			border-radius: none;
+			font-weight: 400;
+		}
+		/*頁面按鈕「1」樣式*/
+		.page-1{
+			background-color: $primary-300;
+			font-weight: 500;
+		}
+		.page:hover{
+			background-color: $primary-300;
+		}
+		.right{
+			cursor:default;
+		}
+	}
+}
+@media(max-width:768px){
+	.product-list{
+		padding-top: 16px;
+		padding-bottom: 16px;
+		margin-bottom: 24px;
+
+		.h3{
+			padding-top: 9.5px;
+			padding-bottom: 9.5px;
+		}
+		.list-card{
+			margin-bottom: 24px;
+		}
+		.list{
+			margin-bottom: 32px;
+		}
+	}
+}

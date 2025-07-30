@@ -1,0 +1,27 @@
+/*footer & copyright*/
+.footer{
+	padding-top: 64px;
+	padding-bottom: 64px;
+	background-color: $neutral-100;
+	.navbar{
+		margin-bottom: 24px;
+	}
+	.copyright{
+		text-align: center;
+		border-top: 1px solid $neutral-300;
+		p{
+			font-size: 14px;
+			font-weight: 400;
+			color: $neutral-600;
+		}
+		.p-1{
+			margin-top: 32px;
+		}
+	}
+}
+@media(max-width:768px){
+	.footer{
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+}

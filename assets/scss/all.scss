@@ -1,0 +1,24 @@
+/* 字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+@import './helper/variables';
+@import './helper/utils';
+
+@import './base/reset';
+@import './base/base';
+
+@import './components/breadcrumb';
+@import './components/button';
+
+@import './layout/navbar';
+@import './layout/banner';
+@import './layout/footer';
+
+
+@import './pages/index';
+@import './pages/list';
+@import './pages/content';
+@import './pages/brandstory';
+@import './pages/login.scss';
+@import './pages/signup';
+@import './pages/collect';

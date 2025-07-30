@@ -1,0 +1,137 @@
+/*表頭圖片設定*/
+.hero-section{
+	background-image:url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true");
+	max-width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+    /*表頭標題定位*/
+    .page-title{
+        margin: 0 auto;
+        padding-top: 151px;
+        padding-bottom: 151px;
+
+        .h2{
+            font-size: 40px;
+	        text-align: center;
+	        color:$neutral-white;
+        }
+        .h3{
+            text-align: center;
+	        color: $neutral-white;
+        }
+    }
+}
+/*main*/
+.brand-story{
+	padding-top: 64px;
+    padding-bottom: 64px;
+
+    /*col-8 定位*/
+    .col-8{
+        margin: 0 auto;
+    }
+    /*col-10 定位*/
+    .col-10{
+        margin: 0 auto;
+    }
+
+    /*blockquote 背景、文字設定*/
+    .blockquote{
+        text-align: center;
+        padding: 32px;
+        background-color: $primary-100;
+        .h5{
+            margin-bottom: 12px;
+            color: $primary-400;
+        }
+    }
+    .brand-intro{
+        /*圖片設定*/
+        img{
+            max-width: 100%;
+            display: block;
+        }
+        /*intro 底線樣式*/
+        .intro{
+            border-bottom: 1px solid $neutral-300;
+            /*文字顏色*/
+            .h5{
+                color: $primary-400;
+            }
+        }
+    }
+    .histoory{
+        border-bottom: 1px solid $neutral-300;
+        padding-bottom: 48px;
+        /*histoory li*3 樣式*/
+        li{ 
+            list-style-type: disc;
+            list-style-position: inside;/*實心圓位置往內*/
+            padding-left: 8px;
+        }
+    }
+    .brand-concept{
+        border-bottom: 1px solid $neutral-300;
+        padding-bottom: 48px;
+        /*brand-concept li*3 樣式*/
+        ul li{
+            padding-left: 12px; /*左內縮*/
+            border-left: 3px solid $neutral-300;
+        }
+    }
+    .story{
+        border-bottom: 1px solid $neutral-300;
+        padding-bottom: 48px;
+
+        .material-symbols-outlined{
+            font-size: 15px;
+            color: $primary-400;
+            margin-right: 4px; /*右外推*/
+        }
+        li a{
+            text-decoration-line: none;
+            font-weight: 500;
+            line-height: 1.5;
+            color:$primary-400;
+            border-bottom: 1px solid $primary-400;
+            padding-bottom: 4px; /*文字跟底線距離*/
+            /*新增 a 連結的 hover 效果 */
+            &:hover{
+                color: $neutral-white ;
+                background: $primary-400;
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+	.hero-section{
+		background-image:url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/hero-sm.png?raw=true");
+	}
+	.page-title{
+		padding-top: 87px;
+        padding-bottom: 87px;
+        .h2{
+            font-size: 28px;
+        }
+	}
+	.brand-story{
+		padding-top: 32px;
+        padding-bottom: 32px;
+
+        .blockquote{
+            padding: 24px;
+        }
+        .histoory{
+            padding-bottom: 32px;
+        }
+        .brand-concept{
+            padding-bottom: 32px;
+        }
+        .story{
+            padding-bottom: 32px;
+        }
+	}
+}

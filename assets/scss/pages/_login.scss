@@ -1,0 +1,100 @@
+/*main*/
+.log-in{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+/*左側logo*/
+/*容器位置*/
+.col-5{
+    .bg-img{
+        margin: 0 auto;
+        width: 100%;
+        border-radius: 12px;
+        /*加入背景圖*/
+        background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/login.png?raw=true");
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+/*右側登入頁*/
+.col-7{
+    .bg-img{
+        margin: 0 auto;
+        width: 100%;
+        border-radius: 12px;
+        padding: 120px 80px;
+        /*加入背景圖*/
+        background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/login-bg.png?raw=true");
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .login-box{
+        margin: 0 auto;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+/*登入表格*/
+/*所有表格的設定*/
+.login-table{
+    width: 100%;
+    text-align: center;
+    a{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        color: $neutral-600;
+        border-bottom: 2px solid transparent;
+    }
+    th{
+        border-bottom: 2px solid $neutral-300;
+        &:hover{
+            border-bottom-color: $neutral-900;
+            a{
+                color: $neutral-900;
+            }
+        }
+    }
+    /*針對 active 表格的設定*/
+    .active{
+        border-bottom: 2px solid $neutral-900;
+        a{
+            color: $neutral-900;
+        }
+    }
+}
+.form{
+    border-radius: 4px;
+    border: 1px solid $neutral-300;
+    background-color: $neutral-white;
+    a{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 12px;
+        &:hover{
+            background-color: $neutral-300;
+        }
+    }
+    img{
+        width: 40px;
+        height: 40px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+@media(max-width:768px){
+    .log-in{
+        padding: 0;
+    }
+    .col-7 .bg-img{
+        background-image: url("");
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
